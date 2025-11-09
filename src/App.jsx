@@ -70,7 +70,7 @@ function App() {
           {/* Social Proof */}
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
             <div>
-              <div className="text-3xl font-bold text-blue-400">8+</div>
+              <div className="text-3xl font-bold text-blue-400">12+</div>
               <div className="text-gray-400">Years Experience</div>
             </div>
             <div>
@@ -78,8 +78,8 @@ function App() {
               <div className="text-gray-400">Certified Expert</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-blue-400">2 Languages</div>
-              <div className="text-gray-400">EN + PT</div>
+              <div className="text-3xl font-bold text-blue-400">4 Languages</div>
+              <div className="text-gray-400">EN, ES, FR, PT</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-blue-400">Full Stack</div>
@@ -315,14 +315,14 @@ function App() {
             <p className="text-gray-400 mb-4">Prefer to talk first?</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:edou@example.com"
+                href="mailto:edou.mota@me.com"
                 className="text-blue-400 hover:text-blue-300 transition-colors"
               >
-                edou@example.com
+                edou.mota@me.com
               </a>
               <span className="hidden sm:inline text-gray-600">|</span>
               <a
-                href="https://linkedin.com/in/edoumota"
+                href="https://www.linkedin.com/in/edou-mota-b6489a27/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 transition-colors"
@@ -331,7 +331,7 @@ function App() {
               </a>
               <span className="hidden sm:inline text-gray-600">|</span>
               <a
-                href="https://calendly.com/edoumota"
+                href="https://calendly.com/edou-mota/30min"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 transition-colors"
@@ -347,7 +347,7 @@ function App() {
       <footer className="px-6 py-8 bg-slate-900 border-t border-white/10">
         <div className="max-w-7xl mx-auto text-center text-gray-400 text-sm">
           <p>© 2025 Edou Mota. All rights reserved.</p>
-          <p className="mt-2">Marketing Automation • Design • SFMC • Bilingual (EN/PT)</p>
+          <p className="mt-2">Marketing Automation • Design • SFMC • Multilingual (EN/ES/FR/PT)</p>
         </div>
       </footer>
     </div>
