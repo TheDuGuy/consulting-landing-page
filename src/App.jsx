@@ -46,9 +46,9 @@ function App() {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
-            Done-for-you Salesforce Marketing Cloud setup + beautiful email designs.
+            Done-for-you marketing automation setup + beautiful email designs.
             <span className="block mt-2 text-blue-300">
-              Launch professional campaigns in weeks, not months.
+              SFMC • HubSpot • Braze • Marketo & more
             </span>
           </p>
 
@@ -74,8 +74,8 @@ function App() {
               <div className="text-gray-400">Years Experience</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-blue-400">SFMC</div>
-              <div className="text-gray-400">Certified Expert</div>
+              <div className="text-3xl font-bold text-blue-400">5+</div>
+              <div className="text-gray-400">Platforms</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-blue-400">4 Languages</div>
@@ -100,7 +100,7 @@ function App() {
             {[
               {
                 title: "Drowning in Tools",
-                description: "You have SFMC but don't know where to start. The learning curve is steep and you need campaigns running yesterday.",
+                description: "You have a marketing automation platform but don't know where to start. The learning curve is steep and you need campaigns running yesterday.",
                 icon: "⚙️"
               },
               {
@@ -139,11 +139,11 @@ function App() {
               {
                 title: "Technical Implementation",
                 items: [
-                  "SFMC account setup & configuration",
-                  "Journey Builder workflows",
-                  "Automation Studio setup",
-                  "Data extensions & SQL queries",
-                  "API integrations",
+                  "Platform setup & configuration (SFMC, HubSpot, Braze, Marketo)",
+                  "Journey Builder & automation workflows",
+                  "Data management & segmentation",
+                  "SQL queries & custom scripting",
+                  "API integrations & webhooks",
                   "Testing & quality assurance"
                 ]
               },
@@ -259,8 +259,8 @@ function App() {
                 description: "You need bilingual campaigns and someone who understands your market + culture."
               },
               {
-                title: "SFMC Licensees",
-                description: "You bought Salesforce Marketing Cloud but it's sitting unused because it's too complex."
+                title: "Platform Licensees",
+                description: "You bought SFMC, HubSpot, or another tool but it's sitting unused because it's too complex."
               }
             ].map((audience, index) => (
               <div key={index} className="bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300">
@@ -347,7 +347,7 @@ function App() {
       <footer className="px-6 py-8 bg-slate-900 border-t border-white/10">
         <div className="max-w-7xl mx-auto text-center text-gray-400 text-sm">
           <p>© 2025 Edou Mota. All rights reserved.</p>
-          <p className="mt-2">Marketing Automation • Design • SFMC • Multilingual (EN/ES/FR/PT)</p>
+          <p className="mt-2">Marketing Automation • Design • SFMC • HubSpot • Braze • Marketo • Multilingual (EN/ES/FR/PT)</p>
         </div>
       </footer>
     </div>
