@@ -4,18 +4,35 @@ function App() {
   const [email, setEmail] = useState('')
   const [submitted, setSubmitted] = useState(false)
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // In a real implementation, this would send to your email service
-    // For now, just show success message
-    console.log('Email submitted:', email)
-    setSubmitted(true)
 
-    // Reset after 5 seconds
-    setTimeout(() => {
-      setSubmitted(false)
-      setEmail('')
-    }, 5000)
+    try {
+      // Send to Google Sheets
+      const response = await fetch('https://script.google.com/macros/s/AKfycbyUpaT8NG3COtpwUhFLYmROQFAo41mBr1ZR5taswx0gsZ5OqipBqOZIqzhDKqwqi8Y/exec', {
+        method: 'POST',
+        mode: 'no-cors', // Required for Google Apps Script
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: email,
+          source: 'Website - Early Access Form'
+        })
+      })
+
+      console.log('Email submitted:', email)
+      setSubmitted(true)
+
+      // Reset after 5 seconds
+      setTimeout(() => {
+        setSubmitted(false)
+        setEmail('')
+      }, 5000)
+    } catch (error) {
+      console.error('Error submitting email:', error)
+      alert('There was an error. Please try again or email me directly at edou.mota@me.com')
+    }
   }
 
   return (
