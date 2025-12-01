@@ -82,13 +82,13 @@ function App() {
 
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8">
             <p className="text-xl text-gray-300 mb-6">
-              Heads of Marketing, Growth, or CRM who:
+              I'm a good fit for Heads of Marketing, Growth, or CRM who:
             </p>
             <ul className="space-y-4">
               {[
-                "Know they should be doing more with SFMC / HubSpot / email automation",
-                "Have journeys running, but they're fragile, manual, or hard to report on",
-                "Need someone who can both design the lifecycle and build it properly in the tools"
+                "Know they should be doing more with SFMC / HubSpot / email automation, but aren't getting the time or focus.",
+                "Have journeys running, but they're fragile, stitched together over time, or hard to report on.",
+                "Need someone who can design the lifecycle strategy and build it properly in the tools, not just write a deck."
               ].map((item, index) => (
                 <li key={index} className="flex items-start text-gray-300">
                   <span className="text-blue-400 mr-3 text-xl">•</span>
@@ -132,6 +132,94 @@ function App() {
                 <p className="text-gray-300 leading-relaxed">
                   {service.description}
                 </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Perfect For Section */}
+      <section className="px-6 py-20 bg-slate-900/50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
+            Perfect For
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              {
+                title: "Scale-ups & SMBs",
+                description: "You've outgrown basic newsletters. You need enterprise-level CRM and automation but don't have a full-time marketing ops team."
+              },
+              {
+                title: "Marketing Directors",
+                description: "You know what needs to happen across the lifecycle, but don't have the hands-on SFMC/HubSpot bandwidth to implement it properly."
+              },
+              {
+                title: "Platform Licensees",
+                description: "You bought SFMC, HubSpot, or another platform, but it's under-used because it feels too complex or risky to touch."
+              },
+              {
+                title: "Ecommerce & Product-led Brands",
+                description: "You rely on repeat customers and LTV, and need journeys that actually drive activation, adoption, and retention."
+              }
+            ].map((audience, index) => (
+              <div key={index} className="bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300">
+                <h3 className="text-lg font-bold text-blue-400 mb-2">{audience.title}</h3>
+                <p className="text-gray-400">{audience.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* What You Get Section */}
+      <section className="px-6 py-20">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
+            What You Get
+          </h2>
+          <p className="text-xl text-gray-300 text-center mb-12">
+            Complete CRM & marketing automation support — from data and journeys to copy and creative.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {[
+              {
+                title: "Technical Implementation",
+                items: [
+                  "Platform setup & configuration (SFMC, HubSpot, Braze, Marketo)",
+                  "Journey Builder & automation workflows (onboarding, activation, win-back)",
+                  "Data management & segmentation",
+                  "SQL queries, custom scripting & dynamic content logic",
+                  "API integrations & webhooks",
+                  "Testing, QA & monitoring"
+                ]
+              },
+              {
+                title: "Messaging & Creative",
+                items: [
+                  "Custom email templates and component library",
+                  "Responsive, mobile-first layouts",
+                  "Brand-aligned visuals and copy",
+                  "A/B test variants for subject lines, content, and CTAs",
+                  "Landing page / preference centre support",
+                  "Asset library organisation"
+                ]
+              }
+            ].map((service, index) => (
+              <div key={index} className="bg-gradient-to-br from-blue-900/30 to-cyan-900/30 border border-blue-500/30 rounded-xl p-8">
+                <h3 className="text-2xl font-bold text-white mb-6 border-b border-blue-500/30 pb-4">
+                  {service.title}
+                </h3>
+                <ul className="space-y-3">
+                  {service.items.map((item, i) => (
+                    <li key={i} className="flex items-start text-gray-300">
+                      <span className="text-blue-400 mr-3 text-xl">✓</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
